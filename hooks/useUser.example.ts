@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { User } from 'types/user';
-import { fetchUser } from '../lib/api';
+import { fetchUser } from '../lib/api.example';
 
 export function useUser(userId: string) {
   const [user, setUser] = useState<User>(null as unknown as User);
