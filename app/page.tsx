@@ -1,6 +1,6 @@
 import { Metadata } from "next"
-import { ButtonComponent as Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
+import { Button } from 'flowbite-react'
 
 export const metadata: Metadata = {
   title: "Next.js Enterprise Boilerplate",
@@ -39,7 +39,7 @@ export default function Web() {
               </Button>  
               <Button
                 href="https://blazity.com/open-source/nextjs-enterprise-boilerplate"
-                intent="secondary"
+                color="info"
               >
                 Forked from
               </Button>
