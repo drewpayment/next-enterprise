@@ -1,5 +1,5 @@
 import { Metadata } from "next"
-import { Button } from "components/Button/Button"
+import { ButtonComponent as Button } from "components/Button/Button"
 import { LP_GRID_ITEMS } from "lp-items"
 
 export const metadata: Metadata = {
@@ -33,15 +33,17 @@ export default function Web() {
               Experience rapid UI development, AI-powered code reviews, and an extensive suite of tools for a smooth and
               enjoyable development process.
             </p>
-            <Button href="https://github.com/Blazity/next-enterprise" className="mr-3">
-              Get started
-            </Button>
-            <Button
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/Blazity/next-enterprise"
-              intent="secondary"
-            >
-              Deploy Now
-            </Button>
+            <div className="flex justify-center">
+              <Button href="https://github.com/drewpayment/next-enterprise" className="mr-3">
+                Get started
+              </Button>  
+              <Button
+                href="https://blazity.com/open-source/nextjs-enterprise-boilerplate"
+                intent="secondary"
+              >
+                Forked from
+              </Button>
+            </div>
           </div>
         </div>
       </section>
